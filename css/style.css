@@ -1,45 +1,19 @@
-/* ==================================================
-   BUITENZORG LABS - DESIGN TOKENS
-   ================================================== */
-
 :root {
-    /* Color Palette */
-    --bg-color: #020617;
+    --bg: #020617;
     --primary: #2563EB;
-    --secondary: #4F46E5;
-    --accent: #06B6D4;
-    --text-main: #FFFFFF;
-    --text-muted: #94A3B8;
-    
-    /* Effects & Spacing */
-    --glass-bg: rgba(255, 255, 255, 0.03);
-    --glass-border: 1px solid rgba(255, 255, 255, 0.1);
-    --radius-md: 12px;
-    --radius-lg: 20px;
-    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --text: #ffffff;
+    --inter: 'Inter', sans-serif;
 }
 
-/* Base Setup */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { 
-    background-color: var(--bg-color); 
-    color: var(--text-main); 
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
+body { background: var(--bg); color: var(--text); font-family: var(--inter); }
 
-.container { 
-    width: 90%; 
-    max-width: 1200px; 
-    margin: 0 auto; 
-}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-/* Glassmorphism Utility Class */
-.glass-effect {
-    background: var(--glass-bg);
-    backdrop-filter: blur(20px);
-    border: var(--glass-border);
-    border-radius: var(--radius-lg);
-}
+.navbar { padding: 30px 0; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 24px; font-weight: 800; color: var(--primary); }
 
+.hero { height: 80vh; display: flex; align-items: center; text-align: center; }
+.hero h1 { font-size: 4rem; margin-bottom: 20px; }
+
+.btn-cta { background: var(--primary); padding: 12px 24px; border-radius: 8px; color: white; text-decoration: none; }
