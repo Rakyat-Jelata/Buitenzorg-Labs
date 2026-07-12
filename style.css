@@ -926,4 +926,230 @@ section:nth-child(even) {
 }
 
 .project-status.live {
-   
+    background: rgba(34, 197, 94, 0.2);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.5);
+}
+
+.project-status.coming {
+    background: rgba(250, 204, 21, 0.2);
+    color: #facc15;
+    border: 1px solid rgba(250, 204, 21, 0.5);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - TABLET (768px and below)
+   ============================================ */
+
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 0 var(--spacing-lg);
+    }
+
+    .cta-button {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.9rem;
+        min-width: auto;
+        white-space: nowrap;
+    }
+
+    .navbar-menu {
+        gap: var(--spacing-md);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .brand-name {
+        display: inline;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+    }
+
+    .featured-project {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-projects {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid,
+    .testimonials-grid,
+    .projects-grid,
+    .reasons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+
+   /* ============================================
+   RESPONSIVE DESIGN - MOBILE (480px and below)
+   ============================================ */
+
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 0 var(--spacing-md);
+    }
+
+    .cta-button {
+        padding: 0.625rem 1rem;
+        font-size: 0.85rem;
+        min-width: auto;
+    }
+
+    .navbar-menu {
+        gap: var(--spacing-sm);
+        padding: var(--spacing-lg);
+    }
+
+    .brand-name {
+        display: none;
+    }
+
+    .logo-svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    section {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-items {
+        gap: var(--spacing-sm);
+    }
+
+    .tech-item {
+        flex: 0 0 100%;
+    }
+
+    .services-grid,
+    .testimonials-grid,
+    .projects-grid,
+    .reasons-grid,
+    .portfolio-carousel {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+
+    .featured-projects {
+        grid-template-columns: 1fr;
+    }
+
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 45px;
+        height: 45px;
+    }
+
+    .faq-question {
+        padding: var(--spacing-lg);
+    }
+
+    .faq-answer p {
+        padding: 0 var(--spacing-lg) var(--spacing-lg);
+    }
+
+    .contact-form {
+        gap: var(--spacing-md);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.75rem 0.875rem;
+        font-size: 1rem;
+    }
+
+    .contact-info {
+        gap: var(--spacing-lg);
+    }
+
+    .info-item {
+        padding: var(--spacing-md);
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+
+    .footer-bottom {
+        justify-content: center;
+        flex-direction: column;
+    }
+       }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
